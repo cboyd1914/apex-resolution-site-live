@@ -1,209 +1,312 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Apex Resolution | Automate. Prepare. Eliminate. eXecute.</title>
-      <meta name="description" content="Empowering minority business owners with expert AI consulting services. Start your transformation today." />
-      <meta name="keywords" content="Apex Resolution, AI consulting, business automation, minority business" />
-      <meta name="author" content="Carlos Boyd" />
-      <meta name="robots" content="index, follow" />
-      <!-- Open Graph -->
-      <meta property="og:title" content="Apex Resolution" />
-      <meta property="og:description" content="Empowering minority business owners through AI solutions." />
-      <meta property="og:image" content="https://theapexresolution.com/images/apex-logo.png" />
-      <meta property="og:url" content="https://theapexresolution.com" />
-      <meta property="og:type" content="website" />
-      <!-- Twitter Card -->
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Apex Resolution" />
-      <meta name="twitter:description" content="Start your transformation with our AI consulting services." />
-      <meta name="twitter:image" content="https://theapexresolution.com/images/apex-logo.png" />
-      <!-- Favicon -->
-      <link rel="icon" href="images/apex-logo.png" type="image/png" />
-      <!-- Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-ED6JW13CGB"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}    
-        gtag('js', new Date());    
-        gtag('config', 'G-ED6JW13CGB');
-      </script>
-      <!-- Inter Font -->
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-      <!-- Tailwind CDN Config -->
-      <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                primary: '#4F46E5',
-                accent:  '#F97316',
-                logoGreen: '#008F68',
-                logoBlue: '#0052CC',
-                gold: '#C5A642'
-              },
-              fontFamily: { sans: ['Inter', 'sans-serif'] }
-            }
-          }
-        };
-      </script>
-      <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-    <body class="bg-gray-50 font-sans text-gray-800 leading-relaxed">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Resolution - Transform Your Business with AI Solutions That Deliver Results</title>
+    <meta name="description" content="Kansas City's premier AI consulting firm helping small and minority-owned businesses increase revenue by 35% through automated voice bots and strategic implementation.">
+    <meta name="keywords" content="AI consulting, Kansas City, business automation, voice bot, small business, minority-owned business, APEX system">
     
-      <!-- Navbar -->
-      <nav class="bg-white shadow">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <a href="#home" class="flex items-center">
-            <img src="images/apex-logo.png" alt="Apex Logo" class="h-10 w-auto">
-            <span class="ml-2 text-xl font-semibold text-gray-800">Apex Resolution</span>
-          </a>
-          <ul class="flex space-x-6 text-gray-700 text-sm md:text-base">
-            <li><a href="#home" class="hover:text-primary">Home</a></li>
-            <li><a href="#apex" class="hover:text-primary">APEX System</a></li>
-            <li><a href="#services" class="hover:text-primary">Services</a></li>
-            <li><a href="#book-consultation" class="hover:text-primary">Book Consultation</a></li>
-            <li><a href="#contact" class="hover:text-primary">Contact</a></li>
-          </ul>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Apex Resolution - AI Solutions for Kansas City Businesses">
+    <meta property="og:description" content="Increase revenue by 35% with AI Voice Bots that answer 95% of calls and automate scheduling.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://theapexresolution.com">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script src="assets/js/analytics.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/images/apex-logo.png" alt="Apex Resolution" class="logo">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="pages/services.html">Services</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="#results">Results</a></li>
+                    <li><a href="pages/contact.html" class="cta-button" onclick="trackButtonClick('Book Consultation', 'header')">Book Consultation</a></li>
+                </ul>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <h1>Transform Your Business Operations with AI Solutions That Deliver <span class="accent">Measurable Results</span></h1>
+                    <p class="hero-subtitle">We help Kansas City small and minority-owned businesses increase revenue by 35% through AI Voice Bots that answer 95% of calls and automate scheduling.</p>
+                    
+                    <!-- Key Stats from Pitch Deck -->
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">Call Answer Rate</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$8K</span>
+                            <span class="stat-label">Monthly Revenue Increase</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">12hrs</span>
+                            <span class="stat-label">Weekly Time Saved</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-cta">
+                        <a href="pages/contact.html" class="btn-primary" onclick="trackButtonClick('Get Free Assessment', 'hero')">
+                            <i class="fas fa-rocket"></i>
+                            Get Your Free AI Assessment
+                        </a>
+                        <a href="#results" class="btn-secondary" onclick="trackButtonClick('See Results', 'hero')">
+                            <i class="fas fa-chart-line"></i>
+                            See Our Results
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image fade-in">
+                    <img src="assets/images/hero-bg.jpg" alt="AI Voice Bot in Action" style="width: 100%; height: auto; border-radius: 15px;">
+                </div>
+            </div>
         </div>
-      </nav>
-    
-      <!-- Hero Section -->
-        <!-- Hero Section -->
-  <section id="home" class="py-16 md:py-20 bg-gradient-to-r from-logoBlue to-logoGreen text-white">
-    <div class="max-w-2xl mx-auto px-4 text-center">
-      <h1 class="font-semibold text-3xl md:text-5xl mb-4">Your partner in AI Solutions</h1>
-      <p class="text-gold text-base md:text-lg mb-6">Automate. Prepare. Empower. eXecute. Transform your business today.</p>
-      <a href="#book-consultation" class="inline-block bg-accent text-white px-5 py-3 rounded-lg font-medium hover:bg-orange-500">
-        Start Your Transformation
-      </a>
-    </div>
-  </section>
-    
-      <!-- APEX System -->
-      <section id="apex" class="py-12 md:py-16 bg-gray-100">
-        <div class="max-w-3xl mx-auto px-4">
-          <h2 class="text-2xl md:text-3xl font-bold text-center text-logoGreen mb-4">The APEX System</h2>
-          <p class="text-center text-gray-700 mb-6">At Apex Resolution, we don't just solve problems— we transform them into possibilities.</p>
-          <ul class="space-y-3 text-gray-700">
-            <li><strong class="text-primary">Automate:</strong> Routine processes using AI solutions tailored to your business.</li>
-            <li><strong class="text-primary">Prepare:</strong> Strategic financial and operational planning.</li>
-            <li><strong class="text-primary">Empower:</strong> Future-focused guidance and support.</li>
-            <li><strong class="text-primary">eXecute:</strong> Culturally relevant, coach-supported implementation.</li>
-          </ul>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section" id="problem">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">Kansas City Businesses Are Losing Millions in Revenue</h2>
+                <p class="section-subtitle">Local businesses face critical challenges that AI can solve immediately</p>
+            </div>
+            
+            <div class="problem-cards">
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>$5 Billion at Risk</h3>
+                    <p>Kansas City's 10,000+ minority-owned businesses lose revenue daily from missed calls and inefficient operations. Our community survey of 75 businesses revealed critical gaps in customer engagement.</p>
+                </div>
+                
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Time Waste Crisis</h3>
+                    <p>Business owners spend 12+ hours weekly on repetitive tasks that could be automated. This time should be invested in growth, strategy, and community building.</p>
+                </div>
+                
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>Complex Decisions</h3>
+                    <p>Small businesses struggle with technology implementation and strategic planning. They need expert guidance to navigate AI solutions and maximize ROI.</p>
+                </div>
+            </div>
         </div>
-      </section>
-    
-      <!-- Services -->
-      <section id="services" class="py-12 md:py-16">
-        <div class="max-w-3xl mx-auto px-4">
-          <h2 class="text-xl md:text-2xl font-semibold text-center text-logoBlue mb-4">Our AI Consulting Services</h2>
-          <p class="text-center text-gray-700 mb-8">Comprehensive AI solutions tailored to your business needs and industry.</p>
+    </section>
+
+    <!-- APEX System Section -->
+    <section class="section" id="apex-system">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">The APEX System</h2>
+                <p class="section-subtitle">Our proven methodology transforms business operations through strategic AI implementation</p>
+            </div>
+            
+            <div class="apex-cards">
+                <div class="apex-card fade-in">
+                    <div class="apex-letter">A</div>
+                    <h3>Automate</h3>
+                    <p>Implement AI Voice Bots that answer 95% of calls, schedule appointments automatically, and handle customer inquiries 24/7. Reduce manual workload by 12+ hours weekly.</p>
+                </div>
+                
+                <div class="apex-card fade-in">
+                    <div class="apex-letter">P</div>
+                    <h3>Prepare</h3>
+                    <p>Strategic financial and operational planning with data-driven insights. Develop comprehensive business strategies that support sustainable growth and community impact.</p>
+                </div>
+                
+                <div class="apex-card fade-in">
+                    <div class="apex-letter">E</div>
+                    <h3>Eliminate</h3>
+                    <p>Remove inefficiencies and streamline processes. Focus resources on high-impact activities that drive revenue growth and strengthen community connections.</p>
+                </div>
+                
+                <div class="apex-card fade-in">
+                    <div class="apex-letter">X</div>
+                    <h3>eXecute</h3>
+                    <p>Implement solutions with ongoing support and coaching. Ensure successful adoption with culturally relevant, community-focused guidance and continuous optimization.</p>
+                </div>
+            </div>
         </div>
-      </section>
-    
-      <!-- Book Consultation -->
-      <section id="book-consultation" class="py-12 md:py-16 bg-gray-100">
-        <div class="max-w-2xl mx-auto px-4 text-center">
-          <h2 class="text-xl md:text-2xl font-semibold text-primary mb-4">Book Your Free Consultation</h2>
-          <p class="text-gray-700 mb-6">Schedule a consultation to discuss how AI can transform your business.</p>
-          <iframe src="https://link.adsandfunnel.io/widget/booking/ItFMEtEZMbph7x8BTuXi" class="w-full h-[500px] md:h-[600px] border-0 mb-8" scrolling="no"></iframe>
-          <script src="https://link.adsandfunnel.io/js/form_embed.js"></script>
+    </section>
+
+    <!-- Results Section -->
+    <section class="section" id="results">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">Proven Results from Real Businesses</h2>
+                <p class="section-subtitle">Actual data from our Kansas City pilot programs</p>
+            </div>
+            
+            <div class="results-cards">
+                <div class="result-card fade-in">
+                    <div class="result-number">95%</div>
+                    <div class="result-label">Call Answer Rate</div>
+                    <div class="result-improvement">↑ from 45%</div>
+                </div>
+                
+                <div class="result-card fade-in">
+                    <div class="result-number">62%</div>
+                    <div class="result-label">Booking Rate</div>
+                    <div class="result-improvement">↑ from 28%</div>
+                </div>
+                
+                <div class="result-card fade-in">
+                    <div class="result-number">92%</div>
+                    <div class="result-label">Show-up Rate</div>
+                    <div class="result-improvement">↑ from 68%</div>
+                </div>
+                
+                <div class="result-card fade-in">
+                    <div class="result-number">4.8/5</div>
+                    <div class="result-label">Satisfaction</div>
+                    <div class="result-improvement">85% retention</div>
+                </div>
+            </div>
+            
+            <div class="aggregate-result fade-in">
+                <h3>$96,000 Additional Annual Revenue</h3>
+                <p>Average increase across pilot program participants</p>
+            </div>
         </div>
-      </section>
-    
-      <!-- Contact -->
-      <section id="contact" class="py-12 md:py-16">
-        <div class="max-w-4xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <h3 class="text-lg md:text-xl font-semibold text-primary mb-2">Contact Information</h3>
-            <p><strong>Phone:</strong> (816) 330-7855</p>
-            <p><strong>Email:</strong> <a href="#" class="hover:text-primary">support@theapexresolution.com</a></p>
-            <p><strong>Office Hours:</strong> Mon–Fri, 9am–5pm CST</p>
-          </div>
-          <form class="space-y-4">
-            <div><label class="block text-sm font-medium mb-1">Name *</label><input type="text" required class="w-full border border-gray-300 p-2 rounded"></div>
-            <div><label class="block text-sm font-medium mb-1">Email *</label><input type="email" required class="w-full border border-gray-300 p-2 rounded"></div>
-            <div><label class="block text-sm font-medium mb-1">Message *</label><textarea required class="w-full border border-gray-300 p-2 rounded h-32"></textarea></div>
-            <button type="submit" class="bg-primary text-white px-4 py-2 rounded hover:bg-indigo-700">Send Message</button>
-          </form>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="section founder-section" id="founder">
+        <div class="container">
+            <div class="founder-content">
+                <div class="founder-image fade-in">
+                    <img src="assets/images/carlos-headshot.jpg" alt="Carlos Boyd, Founder & CEO">
+                </div>
+                <div class="founder-info fade-in">
+                    <h3>Carlos Boyd</h3>
+                    <div class="founder-title">Founder & CEO, IAAIC Certified AI Consultant</div>
+                    <p>With over 20 years of experience in IT and business consulting, Carlos is dedicated to empowering Kansas City's small and minority-owned businesses through strategic AI implementation. His community-focused approach ensures that technology serves not just business growth, but strengthens our local economy.</p>
+                    <p>Carlos holds IAAIC certification and has successfully guided dozens of businesses through digital transformation, with a special focus on culturally relevant solutions that respect and enhance community values.</p>
+                    
+                    <div class="credentials">
+                        <span class="credential-badge">IAAIC Certified</span>
+                        <span class="credential-badge">Kansas City Focused</span>
+                        <span class="credential-badge">Community Committed</span>
+                    </div>
+                    
+                    <div class="mt-2">
+                        <a href="pages/about.html" class="btn-primary">Learn More About Carlos</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-    
-      <!-- Terms of Service -->
-      <section id="terms" class="py-12 md:py-16 bg-gray-100">
-        <div class="max-w-4xl mx-auto px-4 space-y-6 text-gray-700">
-          <h2 class="text-xl md:text-2xl font-semibold text-center text-primary mb-4">Terms of Service</h2>
-          <div>
-            <h3 class="font-medium">1. Introduction</h3>
-            <p>These Terms govern your use of Apex Resolution’s website and services. By accessing our services, you agree to these terms.</p>
-          </div>
-          <div>
-            <h3 class="font-medium">2. Services</h3>
-            <p>Apex Resolution offers AI consulting, strategy development, and implementation services. See our Services page for details.</p>
-          </div>
-          <div>
-            <h3 class="font-medium">3. Fees & Payment</h3>
-            <p>Fees as quoted. Payments processed via Stripe. You must provide accurate billing information.</p>
-          </div>
-          <div>
-            <h3 class="font-medium">4. Invoicing</h3>
-            <p>Invoices issued at milestones or monthly. Due within 15 days. 1.5% monthly late fee applies.</p>
-          </div>
-          <div>
-            <h3 class="font-medium">5. Refunds & Cancellations</h3>
-            <p>Refund requests within 30 days of delivery. Partial refunds based on work completed. 7 days’ notice to cancel before next billing cycle.</p>
-          </div>
-          <div>
-            <h3 class="font-medium">6. IP Rights</h3>
-            <p>All deliverables remain property of Apex Resolution unless agreed otherwise. Clients receive usage license.</p>
-          </div>
-          <div>
-            <h3 class="font-medium">7. Confidentiality</h3>
-            <p>We protect your confidential info; both parties agree not to disclose third parties.</p>
-          </div>
-          <div>
-            <h3 class="font-medium">8. Termination</h3>
-            <p>Either party can terminate with 14 days’ notice. Unpaid fees due upon termination.</p>
-          </div>
-          <div>
-            <h3 class="font-medium">9. Liability</h3>
-            <p>Liability capped at fees paid in prior 6 months. No indirect/consequential damages.</p>
-          </div>
-          <div>
-            <h3 class="font-medium">10. Governing Law</h3>
-            <p>These terms governed by Missouri law; disputes in Jackson County courts.</p>
-          </div>
-          <div>
-            <h3 class="font-medium">11. Changes</h3>
-            <p>We may update terms; notice via email or site. Continued use signifies acceptance.</p>
-          </div>
-          <div>
-            <h3 class="font-medium">12. Contact</h3>
-            <p>Questions? <a href="#" class="text-primary">support@theapexresolution.com</a> or (816) 330-7855.</p>
-          </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section" id="consultation">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Join Kansas City businesses already seeing 35% revenue increases with our AI solutions</p>
+                
+                <div class="cta-buttons">
+                    <a href="pages/contact.html" class="btn-white" onclick="trackButtonClick('Book Free Consultation', 'cta')">
+                        <i class="fas fa-calendar-alt"></i>
+                        Book Free Consultation
+                    </a>
+                    <a href="tel:+1234567890" class="btn-white" onclick="trackPhoneCall()">
+                        <i class="fas fa-phone"></i>
+                        Call Now: (123) 456-7890
+                    </a>
+                </div>
+            </div>
         </div>
-      </section>
-    
-      <!-- Refund Policy -->
-      <section id="refund-policy" class="py-12 md:py-16">
-        <div class="max-w-4xl mx-auto px-4 text-gray-700 space-y-4">
-          <h2 class="text-xl md:text-2xl font-semibold text-center text-primary mb-4">Refund Policy</h2>
-          <div><h3 class="font-medium">30-Day Guarantee</h3><p>Full refund if not satisfied within 30 days.</p></div>
-          <div><h3 class="font-medium">Partial Refunds</h3><p>Based on completed work.</p></div>
-          <div><h3 class="font-medium">How to Request</h3><p>Email support@theapexresolution.com.</p></div>
-          <div><h3 class="font-medium">Processing</h3><p>Refunds issued within 5-7 business days.</p></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="assets/images/apex-logo.png" alt="Apex Resolution" class="footer-logo">
+                    <p>Empowering Kansas City businesses through AI innovation and strategic implementation.</p>
+                    <div class="mt-2">
+                        <a href="mailto:carlos@theapexresolution.com" onclick="trackButtonClick('Email Footer', 'footer')">
+                            <i class="fas fa-envelope"></i> carlos@theapexresolution.com
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="pages/services.html">AI Voice Bot</a></li>
+                        <li><a href="pages/services.html">APEX System</a></li>
+                        <li><a href="pages/services.html">Business Coaching</a></li>
+                        <li><a href="pages/services.html">Workshops</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                        <li><a href="#results">Case Studies</a></li>
+                        <li><a href="#founder">Our Team</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Kansas City, MO</p>
+                    <p><i class="fas fa-envelope"></i> carlos@theapexresolution.com</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-certificate"></i> IAAIC Certified</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Apex Resolution. All rights reserved. | Empowering Kansas City businesses through AI innovation.</p>
+            </div>
         </div>
-      </section>
-    
-      <!-- Footer -->
-      <footer class="py-8 bg-gray-800 text-gray-200 text-center">
-        <div class="max-w-4xl mx-auto px-4 space-y-2">
-          <p>&copy; 2025 Apex Resolution. All rights reserved.</p>
-          <p>Follow us: <a href="#" class="hover:text-white">Facebook</a> | <a href="#" class="hover:text-white">LinkedIn</a> | <a href="#" class="hover:text-white">Instagram</a></p>
-        </div>
-      </footer>
-    
-    </body>
-    </html>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Track page load
+        document.addEventListener('DOMContentLoaded', function() {
+            trackPageView('Homepage');
+        });
+    </script>
+</body>
+</html>
+
